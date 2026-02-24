@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 24px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #222;
+    padding: 0 10px;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+.page-title {
+    font-family: Onest, system-ui, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    font-family: Onest, system-ui, sans-serif;
+    font-size: 0.95rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #444;
+}
+
+.navbar a:hover {
+    color: #000;
+}
+
+.body-text {
+    font-family: "Roboto Serif", serif;
+    margin-top: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-family: Onest, system-ui, sans-serif;
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #666;
+}
+
+.social-links a:hover {
+    color: #000;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-family: Onest, system-ui, sans-serif;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.site-footer a {
+    text-decoration: none;
+    color: #888;
+}
+
+.site-footer a:hover {
+    color: #000;
+}
