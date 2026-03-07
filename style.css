@@ -5,38 +5,39 @@
 }
 
 body {
-    margin: 24px auto;
     max-width: 650px;
+    margin: 24px auto;
+    padding: 0 12px;
+    font-size: 18px; /* I accidentally put it here, but for some reason that affects header font sizes, and I wanted to keep those font sizes, so I also put the actual font size in .body-text */
     line-height: 1.6;
-    font-size: 18px;
     color: #222;
-    padding: 0 10px;
 }
 
 h1, h2, h3 {
+    font-family: Onest, system-ui, sans-serif;
     line-height: 1.2;
+    margin-bottom: 0.75rem;
 }
 
-.page-title {
-    font-family: Onest, system-ui, sans-serif;
+a {
+    color: #0066cc;
+}
+
+a:hover {
+    color: #000;
+}
+
+header {
     margin-bottom: 1rem;
 }
 
 .navbar {
     display: flex;
     gap: 1.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
     border-bottom: 1px solid #ddd;
     font-family: Onest, system-ui, sans-serif;
     font-size: 0.95rem;
-}
-
-a {
-    color: #0066CC;
-}
-
-a:visited {
-    color: #7B2FBE;
 }
 
 .navbar a {
@@ -44,21 +45,22 @@ a:visited {
     color: #444;
 }
 
-.navbar a:hover {
+.navbar a[aria-current="page"] {
     color: #000;
+    font-weight: 600;
 }
 
 .body-text {
     font-family: "Roboto Serif", serif;
     margin-top: 1rem;
+    font-size: 17px;
 }
 
 .social-links {
     display: flex;
     gap: 1.5rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     font-family: Onest, system-ui, sans-serif;
@@ -70,15 +72,45 @@ a:visited {
     color: #666;
 }
 
-.social-links a:hover {
-    color: #000;
+.subdomain-list {
+    margin-top: 1rem;
+}
+
+.subdomain-item {
+    display: grid;
+    grid-template-columns: minmax(140px, 200px) 1fr;
+    gap: 1rem;
+    padding: 0.85rem 0;
+}
+
+.subdomain-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.subdomain-url {
+    font-family: Onest, system-ui, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.subdomain-service {
+    font-family: Onest, system-ui, sans-serif;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.subdomain-description {
+    font-family: "Roboto Serif", serif;
+    font-size: 0.9rem;
+    color: #444;
 }
 
 .site-footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
     font-family: Onest, system-ui, sans-serif;
     font-size: 0.85rem;
     color: #888;
@@ -86,9 +118,5 @@ a:visited {
 
 .site-footer a {
     text-decoration: none;
-    color: #888;
-}
-
-.site-footer a:hover {
-    color: #000;
+    color: inherit;
 }
